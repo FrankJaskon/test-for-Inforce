@@ -7,7 +7,7 @@ import {validateTextFieldCreator} from '../../common/validators';
 
 const CreateProductForm = React.memo(({setIsEdit, values, touched, errors, handleChange, handleBlur, handleSubmit}) => {
     return <form onSubmit={handleSubmit} className={s.formWrapper}>
-        <h3 className={s.title}>Creat new product</h3>
+        <h3 className={s.title}>Create new product</h3>
             <div className={s.fieldsWrapper}>
                 <label name='productName' className={s.itemLabel}>Product name:</label>
                 <div>
