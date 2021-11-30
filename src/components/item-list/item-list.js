@@ -29,7 +29,9 @@ const ItemList = ({items, showProductList}) => {
             comments={comments} />);
 
     return <div className={s.itemListWrapper}>
-        {itemsList}
+        <ul>
+            {itemsList}
+        </ul>
         {!isEdit
             ? <CustomButton callbackOnClick={() => setIsEdit(true)}>
                 Add new product

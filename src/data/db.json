@@ -2,7 +2,7 @@
     "productList": [
         {
             "id": 1,
-            "imageUrl": "some url here",
+            "imageUrl": "./asset/defaultImg.png",
             "name": "B",
             "count": 4,
             "size": {
@@ -14,7 +14,7 @@
         },
         {
             "id": 2,
-            "imageUrl": "some url here",
+            "imageUrl": "./asset/defaultImg.png",
             "name": "A",
             "count": 10,
             "size": {
@@ -25,8 +25,8 @@
             "comments": ["CommentModel", "CommentModel"]
         },
         {
-            "id": 2,
-            "imageUrl": "some url here",
+            "id": 3,
+            "imageUrl": "./asset/defaultImg.png",
             "name": "C",
             "count": 10,
             "size": {
