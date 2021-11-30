@@ -2,10 +2,11 @@ import React from 'react';
 
 import s from './Item.module.sass';
 
-const Item = ({id, imageUrl, name, count, size: {width, height}, weight, comments}) => {
-    return <div className={s.itemWrapper}>
-        {`Item ${id}`}
-    </div>
-}
+const Item = React.memo(({id, imageUrl, name, count, size: {width, height}, weight, comments}) => {
+    return <li className={s.itemWrapper}>
+        <span>Item name: {name} </span>
+        <span>Item count: {count} </span>
+    </li>
+});
 
 export default Item;

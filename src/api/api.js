@@ -9,7 +9,7 @@ export const getData = async (url) => {
     return data;
 }
 
-export const postData = async (url, body = {}) => {
+export const putData = async (url, body = {}) => {
     const {data} = await requestPattern.post(url, body);
     return data;
 }

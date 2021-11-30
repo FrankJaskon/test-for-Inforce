@@ -1,4 +1,4 @@
-import {getData} from '../api/api';
+import {getData, putData} from '../api/api';
 
 const SET_PRODUCT_LIST = 'test-app/product-data-reducer/SET-PRODUCT-LIST';
 
@@ -26,6 +26,15 @@ export const showProductList = () => {
     return async (dispatch) => {
         const items = await getData('/productList');
         dispatch(setProductList(items));
+    };
+}
+
+export const creatNewProduct = (body) => {
+    return async (dispatch) => {
+        const {resultCode} = await putData('/productList', body);
+        if (!resultCode) {
+            dispatch(showProductList());
+        }
     };
 }
 
