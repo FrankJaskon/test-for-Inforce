@@ -17,7 +17,7 @@ const ItemList = ({items, showProductList}) => {
 
     const [isShowModal, setIsShowModal] = useState(false);
 
-    const itemsList = items.map(({id, imageUrl, name,
+    const itemsList = items.sort((item, nextItem) => (item.name > nextItem.name) ? 1 : -1).map(({id, imageUrl, name,
         count, size, weight, comments}) => <Item
             key={id}
             id={id}
